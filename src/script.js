@@ -24,6 +24,8 @@ async function getData() {
 
         var cover_url = event.fields.cover_url;
 
+        var event_date = event.fields.date_start;
+
         // on vérifie que l'événement a bien le champs 'lat_lon'
         if (event.fields.lat_lon) {
 
@@ -38,9 +40,10 @@ async function getData() {
 
             var popup = L.popup(maxWidth = 40)
                 .setLatLng([latitude, longitude])
-                .setContent('<p>' + title + '</p><br/><img style="max-width: 100px" src="' + cover_url + '">');
+                .setContent('<p class="popup-title">' + title + '</p><br/><img class="popup-image" src="'
+                    + cover_url + '">');
 
-            var customOptions = {'maxWidth': '100', 'maxHeight': '200'};
+            var customOptions = {'maxWidth': '200', 'maxHeight': '200'};
             marker.bindPopup(popup, customOptions).openPopup();
 
             marker.addTo(mymap);

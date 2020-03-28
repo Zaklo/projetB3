@@ -66,3 +66,17 @@ html, body {
     margin: auto;
     width: 100%;
 }
+
+.popup-image {
+    max-height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.popup-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
