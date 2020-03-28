@@ -43,3 +43,25 @@ html, body{
     right: 0;
     margin-right: 10%;
 }
+
+.filters{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.filter-button{
+    height: 15vw;
+    width: 15vw;
+    text-align: center;
+    box-shadow:
+            0 3.9px 4.7px rgba(0, 0, 0, 0.048),
+            0 13px 15.9px rgba(0, 0, 0, 0.072),
+            0 58px 71px rgba(0, 0, 0, 0.12);
+}
+
+.feather{
+    margin: auto;
+    width: 100%;
+}
