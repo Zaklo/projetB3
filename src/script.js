@@ -12,7 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiemFrbG8iLCJhIjoiY2s4YnBxcHE0MGU4ZTNmbWo2ZnlxNGNoayJ9.PfLD5GhOPBE4WjAn8PlZug'
 }).addTo(mymap);
 
-//get the datas from API "que faire à Paris"
+// Récupérer les datas de l'API "que faire à Paris"
 async function getData(query) {
     if(query == undefined){
         query = " ";
