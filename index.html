@@ -20,11 +20,12 @@
 <div class="map" id="mapid"></div>
 
 <div class="app-footer">
-
-    <input type="text" class="form-control searchbar" placeholder="Recherche">
-
-    <button type="button" class="search-button btn btn-light rounded-circle" placeholder="Recherche"><i
-            data-feather="search"></i></button>
+<form onsubmit="onFormSubmit(event)">
+    <input type="text" class="form-control searchbar" placeholder="Recherche" id="search">
+    
+    <button type="submit" class="search-button btn btn-light rounded-circle" placeholder="Recherche"><i
+        data-feather="search"></i></button>
+</form>
 
     <div class="row filters">
         <div class="col">
