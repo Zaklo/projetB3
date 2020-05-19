@@ -1,6 +1,6 @@
 //set the map
 var mymap = L.map('mapid').setView([48.856613, 2.352222], 13);
-var layerGroup = L.layerGroup().addTo(map);
+var layerGroup = L.layerGroup().addTo(mymap);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -21,6 +21,8 @@ async function getData(query) {
     let response = await fetch(url);
 
     let data = await response.json();
+
+    layerGroup.clearLayers();
 
     data.records.forEach(function (event) {
         // le titre de l'événement
@@ -50,7 +52,7 @@ async function getData(query) {
             var customOptions = { 'maxWidth': '200', 'maxHeight': '200' };
             marker.bindPopup(popup, customOptions).openPopup();
 
-            marker.addTo(mymap);
+            marker.addTo(layerGroup);
         }
 
     });
