@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
           crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,13 +30,13 @@
 
     <div class="row filters">
         <div class="col">
-            <button class="filter-button btn btn-light rounded"><i data-feather="shopping-cart"></i></button>
+            <button class="filter-button btn btn-light rounded" onclick="getData('art')"><i data-feather="feather"></i>Art</button>
         </div>
         <div class="col">
-            <button class="filter-button btn btn-light rounded"><i data-feather="music"></i></button>
+            <button class="filter-button btn btn-light rounded" onclick="getData('music')"><i data-feather="music"></i>Concerts</button>
         </div>
         <div class="col">
-            <button class="filter-button btn btn-light rounded"><i data-feather="coffee"></i></button>
+            <button class="filter-button btn btn-light rounded" onclick="getData('bar')"><i data-feather="coffee"></i>Bars</button>
         </div>
     </div>
 

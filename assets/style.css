@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-
+    font-family: 'Heebo', sans-serif;
 }
 
 .map {
@@ -76,7 +76,7 @@ html, body {
 }
 
 .popup-title {
-    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
     text-align: center;
     font-size: 15px;
 }
