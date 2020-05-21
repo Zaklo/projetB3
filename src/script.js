@@ -48,7 +48,7 @@ async function getData(query) {
             var popup = L.popup(maxWidth = 40)
                 .setLatLng([latitude, longitude])
                 .setContent('<p class="popup-title">' + title + '</p><img class="popup-image" src="'
-                    + cover_url + '"><a href="'+url+'"><button class="btn btn-light btn-event-custom">Voir plus</button></a>');
+                    + cover_url + '"><a href="'+url+'"><button class="btn btn-outline-danger btn-event-custom">Voir plus</button></a>');
 
             var customOptions = { 'maxWidth': '200', 'maxHeight': '200' };
             marker.bindPopup(popup, customOptions).openPopup();

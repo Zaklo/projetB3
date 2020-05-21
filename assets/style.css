@@ -84,5 +84,11 @@ html, body {
 
 .btn-event-custom{
     margin: auto;
-    width: 50%;
+    margin-top: 5% !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+a:hover{
+    text-decoration: none !important;
 }
