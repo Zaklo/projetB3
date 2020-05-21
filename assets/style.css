@@ -92,3 +92,8 @@ html, body {
 a:hover{
     text-decoration: none !important;
 }
+
+.feather{
+    color: #D9534F;
+}
+
