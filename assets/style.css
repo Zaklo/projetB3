@@ -68,7 +68,7 @@ html, body {
 }
 
 .popup-image {
-    max-height: 100px;
+    max-height: 100pxs;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -77,6 +77,12 @@ html, body {
 
 .popup-title {
     font-family: 'Heebo', sans-serif;
+    font-weight: bold;
     text-align: center;
     font-size: 15px;
+}
+
+.btn-event-custom{
+    margin: auto;
+    width: 50%;
 }
