@@ -43,7 +43,13 @@ async function getData(query) {
             // la longitude
             let longitude = event.fields.lat_lon[1];
 
-            var marker = L.marker([latitude, longitude]);
+            var redIcon = L.icon({
+                    iconUrl: "src/marker.png",
+                    iconSize:     [40, 40], // size of the icon
+                
+                });
+                
+            var marker = L.marker([latitude, longitude],{icon: redIcon})
 
             var popup = L.popup(maxWidth = 40)
                 .setLatLng([latitude, longitude])
