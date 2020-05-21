@@ -99,4 +99,6 @@ a:hover{
 
 .title{
     margin: auto;
+    margin-bottom: 2% !important;
+    margin-top: 5% !important;
 }
